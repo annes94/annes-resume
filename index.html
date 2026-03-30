@@ -59,7 +59,6 @@
 <section id="experience">
     <h2>Professional Experience</h2>
     <div class="slider">
-        <button class="prev" onclick="prevSlide()">❮</button>
         <div class="slides">
             <div class="slide active">
                 <p class="org">Capgemini</p>
@@ -146,7 +145,13 @@
                 </p>
             </div>
         </div>
-        <button class="next" onclick="nextSlide()">❯</button>
+        <!-- Navigation Dots -->
+        <div class="dots">
+            <span class="dot active" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
     </div>
 </section>
 
