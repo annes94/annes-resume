@@ -148,6 +148,50 @@ margin-bottom: 10px;
 line-height: 1.7;
 }
 
+.slider {
+position: relative;
+background: white;
+padding: 30px;
+border-radius: 12px;
+box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.slides {
+overflow: hidden;
+}
+
+.slide {
+display: none;
+}
+
+.slide.active {
+display: block;
+}
+
+.prev, .next {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+background: #0f172a;
+color: white;
+border: none;
+padding: 10px 15px;
+cursor: pointer;
+border-radius: 6px;
+}
+
+.prev {
+left: 10px;
+}
+
+.next {
+right: 10px;
+}
+
+.prev:hover, .next:hover {
+background: #38bdf8;
+}
+
 /* Projects */
 .project-card {
 background: white;
