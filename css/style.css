@@ -155,41 +155,97 @@ border-radius: 12px;
 box-shadow: 0 2px 10px rgba(0,0,0,0.08);
 }
 
+/* Slider Container */
+
+.slider {
+background: white;
+padding: 30px;
+border-radius: 12px;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+position: relative;
+}
+
 /* Slides */
+
+.slides {
+position: relative;
+min-height: 250px;
+}
 
 .slide {
 display: none;
-animation: fade 0.6s ease;
+animation: fade 0.6s ease-in-out;
 }
 
 .slide.active {
 display: block;
 }
 
+/* Fade Animation */
+
 @keyframes fade {
 from {opacity: 0;}
 to {opacity: 1;}
 }
 
-/* Dots */
+/* Experience Card Styling */
+
+.slide h3 {
+font-size: 22px;
+color: #0f172a;
+margin-bottom: 5px;
+}
+
+.slide p {
+line-height: 1.6;
+color: #475569;
+}
+
+/* Dots Container */
 
 .dots {
 text-align: center;
-margin-top: 20px;
+margin-top: 25px;
 }
+
+/* Individual Dot */
 
 .dot {
 height: 12px;
 width: 12px;
-margin: 5px;
-background: #cbd5e1;
+margin: 0 6px;
+background-color: #cbd5e1;
 border-radius: 50%;
 display: inline-block;
 cursor: pointer;
+transition: all 0.3s ease;
 }
 
+/* Active Dot */
+
 .dot.active {
-background: #38bdf8;
+background-color: #38bdf8;
+transform: scale(1.2);
+}
+
+/* Hover Effect */
+
+.dot:hover {
+background-color: #0284c7;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 768px) {
+
+.slider {
+padding: 20px;
+}
+
+.slide h3 {
+font-size: 18px;
+}
+
 }
 
 /* Projects */
